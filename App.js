@@ -63,7 +63,7 @@ export default function App() {
     })();
   }, []);
 
-  function getNextFriday(date = new Date()) {
+  const getNextFriday = (date = new Date()) => {
     const dateCopy = new Date(date.getTime());
 
     const nextFriday = new Date(
